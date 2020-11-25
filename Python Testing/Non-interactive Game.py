@@ -45,10 +45,10 @@ class Player:
     def remove_one(self): #Remove one card
         return self.all_cards.pop(0)
     def add_cards(self,new): #Add card
-        if type(new_cards) == type([]):
-            self.all_cards.extend(new_cards)
+        if type(new) == type([]):
+            self.all_cards.extend(new)
         else:
-            self.all_cards.append(new_cards)
+            self.all_cards.append(new)
     def __str__(self):
         return f'Player {self.name} has {len(self.all_cards)} cards'
 
@@ -62,6 +62,9 @@ If one higher, pot goes to higher player
 If same, 'War' declared. 5 cards go into the pot.
 Next draw who higher wins the pot.
 '''
+p1 = Player('p1')
+p2 = Player('p2')
+
 new_deck = Deck()
 new_deck.shuffle()
 for i in range(26):
