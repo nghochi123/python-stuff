@@ -41,7 +41,7 @@ class Player:
 
 
 game_on = True
-for i in range(3):
+while game_on:
     p1 = Player('p1') 
     p2 = Player('p2')
     print('Shuffling...')
@@ -76,6 +76,7 @@ for i in range(3):
     if score2 > score1:
         print('Player 2 wins!\n')
     elif score2 < score1:
-        print('Player 1 wins!\n')
+        print('You Win!\n')
     else:
         print('It is a draw\n')
+    game_on = input('Continue? y to continue, anything else to quit.') == 'y'
