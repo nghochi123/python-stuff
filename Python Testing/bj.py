@@ -68,14 +68,23 @@ while game_on:
                 score1 += i.value
                 print(i)
             print(f'Your score is {score1}')
+            if score1 > 21:
+                print('Bust!')
+            break
     print('Show Hand!')
+    for i in p2.all_cards:
+        score2 += i.value
+    if score2 < 16:
+        p2.add_cards(new_deck.deal())
+        print('Player 2 has drawn another card.')
+    score2 = 0
     for i in p2.all_cards:
         score2 += i.value
         print(i)
     print(f'Player 2 has {score2} points!')
-    if score2 > score1:
+    if (score2 > score1 and score2 <= 21) or score1 > 21:
         print('Player 2 wins!\n')
-    elif score2 < score1:
+    elif (score2 < score1 and score1 <= 21) or score2 > 21:
         print('You Win!\n')
     else:
         print('It is a draw\n')
