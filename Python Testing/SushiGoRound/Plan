@@ -1,0 +1,63 @@
+Game plan:
+Get images of all the sushi
+Get images of all the ingredients
+function- makeSushi x sushi number. e.g. makeOnigiri, makeGunkan
+function- identifySushi x sushi number e.g. identifyOnigiri etc.
+function- checkOrder
+	locateonscreen each sushi type
+function- clearPlates
+function- orderIng x ing number e.g. orderRice
+1. checkOrder, then makeSushi for all orders, then checkOrder once all done.
+
+Python 3.6.9 (default, Oct  8 2020, 12:12:24) 
+[GCC 8.4.0] on linux
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> from PIL import Image
+>>> import pyautogui
+>>> im = pyautogui.screenshot()
+>>> import os
+>>> os.getcwd(
+	)
+'/home/nghochi'
+>>> os.chdir('/home/nghochi/Desktop')
+>>> os.getcwd()
+'/home/nghochi/Desktop'
+>>> im.save('Screenshot.jpg')
+>>> im.getpixel((50,200))
+(255, 255, 255)
+>>> im.getpixel((50,200))
+(255, 255, 255)
+>>> 
+KeyboardInterrupt
+>>> pyautogui.position()
+Point(x=483, y=644)
+>>> pyautogui.position()
+Point(x=487, y=577)
+>>> pyautogui.position()
+Point(x=503, y=285)
+>>> x, y = pyautogui.position()
+>>> x
+503
+>>> y
+285
+>>> os.getcwd
+<built-in function getcwd>
+>>> os.getcwd()
+'/home/nghochi/Desktop'
+>>> os.chdir('/home/nghochi/Desktop/python-stuff/Python Testing/SushiGoRound')
+>>> os.getcwd()
+'/home/nghochi/Desktop/python-stuff/Python Testing/SushiGoRound'
+>>> i = pyautogui.screenshot()
+>>> croppedI = i.crop((96,540,126,557))
+>>> croppedI.save('rice.jpg')
+>>> pyautogui.locateOnScreen('rice.jpg')
+>>> croppedI.save('rice.png')
+>>> pyautogui.locateOnScreen('rice.png')
+Box(left=96, top=540, width=30, height=17)
+>>> pyautogui.locateOnScreen('rice.png')
+Box(left=96, top=540, width=30, height=17)
+>>> pyautogui.click(96+15, 540+16)
+>>> pyautogui.locateOnScreen('rice.png')
+Box(left=96, top=483, width=30, height=17)
+>>> pyautogui.click(96+15, 483+16)
+>>> 
