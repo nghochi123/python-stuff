@@ -1,11 +1,12 @@
 Game plan:
 Get images of all the sushi
-Get images of all the ingredients
+For all the ingredients and ordering food, 
 function- makeSushi x sushi number. e.g. makeOnigiri, makeGunkan
 function- identifySushi x sushi number e.g. identifyOnigiri etc.
 function- checkOrder
 	locateonscreen each sushi type
 function- clearPlates
+function- checkIng: check how many ingredients left
 function- orderIng x ing number e.g. orderRice
 1. checkOrder, then makeSushi for all orders, then checkOrder once all done.
 
