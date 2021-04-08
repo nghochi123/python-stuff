@@ -2,7 +2,7 @@ import os
 import PIL.Image as p
 
 
-fp = "C:\\Users\\nghoc\\Desktop\\GitHub\\python-stuff\\bad_apple_archive"
+fp = "C:\\Users\\nghoc\\Desktop\\GitHub\\python-stuff\\bad_apple"
 
 
 asciichars = "$@B%8&WM#*oahkwmZO0QLCJUYXzcvxrjft/\|()1[]?-_+~<>i!lI;:,^`.      "
