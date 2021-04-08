@@ -2,6 +2,8 @@
 
 A simple program used to convert images to ASCII. Free to use
 
+[Demo](https://www.youtube.com/watch?v=7qHKRo7rqhQ)
+
 ## How it works
 
 This program uses [PIL (or pillow)](https://pypi.org/project/Pillow/) to convert individual images into ASCII 'images' based on the grayscaled version of
